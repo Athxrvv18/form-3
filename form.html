@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Customer Registration Form</title>
+</head>
+<body>
+    <h1>Customer Registration Form</h1>
+    <form action="" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="contact">Contact Number:</label>
+        <input type="tel" id="contact" name="contact" pattern="[0-9]{10}" required><br><br>
+
+        <label for="gender">Gender:</label><br>
+        <input type="radio" id="male" name="gender" value="Male">
+        <label for="male">Male</label><br>
+        <input type="radio" id="female" name="gender" value="Female">
+        <label for="female">Female</label><br>
+        <input type="radio" id="other" name="gender" value="Other">
+        <label for="other">Other</label><br><br>
+
+        <label for="preferred_days">Preferred Days of Purchasing:</label><br>
+        <input type="checkbox" id="monday" name="preferred_days" value="Monday">
+        <label for="monday">Monday</label><br>
+        <input type="checkbox" id="tuesday" name="preferred_days" value="Tuesday">
+        <label for="tuesday">Tuesday</label><br>
+        <input type="checkbox" id="wednesday" name="preferred_days" value="Wednesday">
+        <label for="wednesday">Wednesday</label><br>
+        <input type="checkbox" id="thursday" name="preferred_days" value="Thursday">
+        <label for="thursday">Thursday</label><br>
+        <input type="checkbox" id="friday" name="preferred_days" value="Friday">
+        <label for="friday">Friday</label><br>
+        <input type="checkbox" id="saturday" name="preferred_days" value="Saturday">
+        <label for="saturday">Saturday</label><br>
+        <input type="checkbox" id="sunday" name="preferred_days" value="Sunday">
+        <label for="sunday">Sunday</label><br><br>
+
+        <label for="fav_item">Favorite Item:</label>
+        <select id="fav_item" name="fav_item">
+            <option value="Groceries">Groceries</option>
+            <option value="Electronics">Electronics</option>
+            <option value="Clothing">Clothing</option>
+            <option value="Stationery">Stationery</option>
+            <option value="Other">Other</option>
+        </select><br><br>
+
+        <label for="suggestions">Suggestions:</label><br>
+        <textarea id="suggestions" name="suggestions" rows="4" cols="50"></textarea><br><br>
+
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    </form>
+</body>
+</html>
